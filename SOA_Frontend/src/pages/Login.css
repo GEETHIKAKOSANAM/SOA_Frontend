@@ -1,0 +1,196 @@
+.login-page {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #f4f8f7;
+
+  padding: 20px;
+}
+
+.login-card {
+  width: 540px;
+
+  background: #ffffff;
+
+  padding: 40px;
+
+  border-radius: 16px;
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Logo */
+
+.login-logo {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.login-logo h1 {
+  margin: 0;
+
+  font-size: 32px;
+  font-weight: 700;
+
+  color: #1b9aaa;
+}
+
+
+/* Heading */
+
+.login-card h2 {
+  text-align: center;
+
+  margin: 10px 0 8px;
+
+  font-size: 28px;
+
+  color: #222222;
+}
+
+.login-subtitle {
+  text-align: center;
+
+  color: #777777;
+
+  margin-bottom: 30px;
+}
+
+
+/* Inputs */
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  color: #333333;
+}
+
+.input-group input {
+  width: 100%;
+
+  height: 48px;
+
+  padding: 12px 14px;
+
+  border: 1px solid #d5d5d5;
+
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  color: #222222;
+
+  font-size: 15px;
+
+  outline: none;
+
+  box-sizing: border-box;
+}
+
+.input-group input::placeholder {
+  color: #999999;
+}
+
+.input-group input:focus {
+  border-color: #1b9aaa;
+
+  box-shadow: 0 0 0 2px rgba(27, 154, 170, 0.12);
+}
+
+
+/* Options */
+
+.login-options {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 25px;
+
+  font-size: 13px;
+}
+
+.remember-me {
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  color: #777777;
+}
+
+.remember-me input {
+  accent-color: #1b9aaa;
+}
+
+.forgot-password {
+  color: #1b9aaa;
+
+  text-decoration: none;
+}
+
+
+/* Login button */
+
+.login-button {
+  width: 100%;
+
+  height: 48px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #1b9aaa;
+
+  color: #ffffff;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background: #168a99;
+}
+
+
+/* Sign up */
+
+.signup-text {
+  text-align: center;
+
+  margin-top: 25px;
+
+  font-size: 14px;
+
+  color: #777777;
+}
+
+.signup-text a {
+  color: #1b9aaa;
+
+  text-decoration: none;
+
+  font-weight: 600;
+}
