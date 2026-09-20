@@ -25,14 +25,23 @@ function Login({ onLogin }) {
             const ADMIN_EMAIL = "admin@gmail.com";
             const ADMIN_PASSWORD = "Admin@123";
 
+            // Admin login
             if (
               email === ADMIN_EMAIL &&
               password === ADMIN_PASSWORD
             ) {
               onLogin("ADMIN");
-            } else {
-              alert("Invalid email or password");
+              return;
             }
+
+            // User login
+            if (email !== "" && password !== "") {
+              onLogin("USER");
+              return;
+            }
+
+            // Invalid login
+            alert("Please enter your email and password.");
           }}
         >
 
@@ -86,6 +95,7 @@ function Login({ onLogin }) {
 
         <p className="signup-text">
           Don't have an account?
+
           <a
             href="#"
             onClick={(e) => e.preventDefault()}

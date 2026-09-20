@@ -3,7 +3,9 @@ import { useEffect, useState } from "react";
 import SplashScreen from "./pages/Splashscreen";
 import Login from "./pages/Login";
 
+
 import AdminDashboard from "./dashboard/AdminDashboard";
+import UserDashboard from "./dashboard/UserDashboard";
 
 function App() {
 
@@ -27,9 +29,17 @@ function App() {
   }
 
 
- if (userRole === "ADMIN") {
+if (userRole === "ADMIN") {
   return (
     <AdminDashboard
+      onLogout={() => setUserRole(null)}
+    />
+  );
+}
+
+if (userRole === "USER") {
+  return (
+    <UserDashboard
       onLogout={() => setUserRole(null)}
     />
   );
